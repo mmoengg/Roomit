@@ -121,10 +121,10 @@ export default function EditorPage() {
             <header className="h-14 border-b border-slate-200 flex items-center justify-between px-6 shrink-0 z-20 bg-white">
                 <div className="flex items-center gap-8">
                     <a href="/" className="flex items-center gap-2 font-bold text-lg tracking-tight text-blue-600">
-                        <div className="w-6 h-6 bg-blue-600 rounded flex items-center justify-center text-white text-xs">H</div>
+                        <div className="w-6 h-6 bg-blue-600 rounded-md flex items-center justify-center text-white text-xs">H</div>
                         roomit
                     </a>
-                    <nav className="hidden lg:flex items-center gap-6 text-[14px] font-semibold text-slate-500">
+                    <nav className="hidden lg:flex items-center gap-6 text-sm font-semibold text-slate-500">
                         <a href="#" className="text-slate-900">프로젝트</a>
                         <a href="#" className="hover:text-slate-900 transition-colors">둘러보기</a>
                         <a href="#" className="hover:text-slate-900 transition-colors">쇼룸</a>
@@ -133,12 +133,12 @@ export default function EditorPage() {
                 </div>
 
                 <div className="flex items-center gap-3 text-slate-500">
-                    <button className="p-1.5 hover:bg-slate-100 rounded transition-colors"><Undo size={18} /></button>
-                    <button className="p-1.5 hover:bg-slate-100 rounded transition-colors"><Redo size={18} /></button>
+                    <button className="p-1.5 hover:bg-slate-100 rounded-md transition-colors"><Undo size={18} /></button>
+                    <button className="p-1.5 hover:bg-slate-100 rounded-md transition-colors"><Redo size={18} /></button>
                     <div className="h-4 w-px bg-slate-200 mx-2"></div>
-                    <button className="p-1.5 hover:bg-slate-100 rounded transition-colors"><ImageIcon size={18} /></button>
-                    <button className="p-1.5 hover:bg-slate-100 rounded transition-colors"><Share2 size={18} /></button>
-                    <button className="p-1.5 hover:bg-slate-100 rounded transition-colors"><Save size={18} /></button>
+                    <button className="p-1.5 hover:bg-slate-100 rounded-md transition-colors"><ImageIcon size={18} /></button>
+                    <button className="p-1.5 hover:bg-slate-100 rounded-md transition-colors"><Share2 size={18} /></button>
+                    <button className="p-1.5 hover:bg-slate-100 rounded-md transition-colors"><Save size={18} /></button>
                     <div className="flex items-center gap-2 ml-4 cursor-pointer hover:bg-slate-50 p-1 pr-3 rounded-full transition-colors border border-transparent hover:border-slate-200">
                         <img src="https://placehold.co/100x100/1e293b/ffffff?text=U" className="w-7 h-7 rounded-full" alt="User" />
                         <span className="text-sm font-semibold text-slate-700">My Room</span>
@@ -156,8 +156,8 @@ export default function EditorPage() {
                             <span className="font-bold text-sm">프로젝트</span>
                             <button className="text-blue-600 text-[12px] font-bold hover:underline">+ 새 프로젝트</button>
                         </div>
-                        <div className="flex items-center gap-3 p-2 bg-slate-50 border border-slate-200 rounded-lg cursor-pointer">
-                            <img src="https://placehold.co/60x40/cbd5e1/f8fafc?text=Thumb" className="w-12 h-8 rounded object-cover border border-slate-200" alt="thumb" />
+                        <div className="flex items-center gap-3 p-2 bg-slate-50 border border-slate-200 rounded-md cursor-pointer">
+                            <img src="https://placehold.co/60x40/cbd5e1/f8fafc?text=Thumb" className="w-12 h-8 rounded-md object-cover border border-slate-200" alt="thumb" />
                             <div className="flex-1 min-w-0">
                                 <p className="text-[13px] font-bold truncate">My Room</p>
                                 <p className="text-[11px] text-slate-500">2024.05.20 수정</p>
@@ -175,10 +175,10 @@ export default function EditorPage() {
                     </nav>
 
                     <div className="p-4">
-                        <div className="border border-slate-200 rounded-xl p-4 bg-slate-50 text-center">
+                        <div className="border border-slate-200 rounded-md p-4 bg-slate-50 text-center">
                             <h4 className="font-bold text-[13px] mb-1">도움이 필요하신가요?</h4>
                             <p className="text-[11px] text-slate-500 mb-3 leading-relaxed">사용 가이드와 튜토리얼을 통해 쉽게 시작해보세요.</p>
-                            <button className="w-full bg-white border border-slate-300 text-[12px] font-bold py-2 rounded-lg hover:bg-slate-100">가이드 보기</button>
+                            <button className="w-full bg-white border border-slate-300 text-[12px] font-bold py-2 rounded-md hover:bg-slate-100">가이드 보기</button>
                         </div>
                     </div>
                 </aside>
@@ -206,11 +206,11 @@ export default function EditorPage() {
                         </div>
 
                         <div className="flex items-center gap-4">
-                            <div className="flex bg-slate-100 p-1 rounded-lg">
-                                <button className="px-4 py-1.5 text-[13px] font-bold text-slate-500 rounded-md">3D 뷰</button>
-                                <button className="px-4 py-1.5 text-[13px] font-bold bg-white text-blue-600 shadow-sm rounded-md">2D 뷰</button>
+                            <div className="flex bg-slate-100 p-1 rounded-md">
+                                <button className="px-4 py-1.5 text-[13px] font-bold text-slate-500 rounded-md-md">3D 뷰</button>
+                                <button className="px-4 py-1.5 text-[13px] font-bold bg-white text-blue-600  rounded-md-md">2D 뷰</button>
                             </div>
-                            <div className="flex border border-slate-200 rounded-lg overflow-hidden">
+                            <div className="flex border border-slate-200 rounded-md overflow-hidden">
                                 <button className="px-3 py-1.5 text-[13px] font-bold bg-blue-50 text-blue-600 border-r border-slate-200">m</button>
                                 <button className="px-3 py-1.5 text-[13px] font-bold bg-white text-slate-500">ft</button>
                             </div>
@@ -221,7 +221,7 @@ export default function EditorPage() {
                     <div className="flex-1 relative overflow-hidden flex items-center justify-center p-8" onPointerDown={handleCanvasClick}>
 
                         {/* Floating Left Toolbar */}
-                        <div className="absolute left-6 top-6 bg-white border border-slate-200 rounded-xl shadow-sm flex flex-col py-2 z-20">
+                        <div className="absolute left-6 top-6 bg-white border border-slate-200 rounded-md  flex flex-col py-2 z-20">
                             <ToolBtn icon={<MousePointer2 size={20} />} label="선택" active />
                             <ToolBtn icon={<Grid3x3 size={20} />} label="벽" />
                             <ToolBtn icon={<DoorOpen size={20} />} label="문/창" />
@@ -236,7 +236,7 @@ export default function EditorPage() {
                         {/* Actual Grid Canvas */}
                         <div
                             ref={canvasRef}
-                            className="w-full max-w-3xl aspect-[4/3] bg-white rounded-sm shadow-md border border-slate-300 relative overflow-hidden mx-auto"
+                            className="w-full max-w-3xl aspect-[4/3] bg-white rounded-md-sm shadow-md border border-slate-300 relative overflow-hidden mx-auto"
                             style={{
                                 backgroundImage: 'radial-gradient(#e2e8f0 1px, transparent 1px)',
                                 backgroundSize: '20px 20px',
@@ -244,7 +244,7 @@ export default function EditorPage() {
                             }}
                         >
                             {/* 도면 예시 박스 (임시 가이드) */}
-                            <div className="absolute inset-20 border-8 border-slate-600 bg-orange-50/30 rounded flex items-center justify-center pointer-events-none opacity-50">
+                            <div className="absolute inset-20 border-8 border-slate-600 bg-orange-50/30 rounded-md flex items-center justify-center pointer-events-none opacity-50">
                                 <span className="bg-white px-2 py-1 text-xs font-bold text-slate-500">도면 영역 예시</span>
                             </div>
 
@@ -259,9 +259,9 @@ export default function EditorPage() {
                                         onPointerDown={(e) => handlePointerDown(e, item.id)}
                                         onPointerMove={handlePointerMove}
                                         onPointerUp={handlePointerUp}
-                                        className={`absolute shadow-sm flex items-center justify-center cursor-move select-none touch-none
+                                        className={`absolute  flex items-center justify-center cursor-move select-none touch-none
                       ${item.color} border-2
-                      ${CatalogInfo?.isRound ? 'rounded-full' : 'rounded-sm'}
+                      ${CatalogInfo?.isRound ? 'rounded-full' : 'rounded-md-sm'}
                       ${isSelected ? 'border-blue-500 shadow-lg ring-4 ring-blue-500/20 z-20' : 'border-opacity-100 z-10'}
                     `}
                                         style={{
@@ -278,7 +278,7 @@ export default function EditorPage() {
                         </div>
 
                         {/* Floating Right Toolbar (Zoom) */}
-                        <div className="absolute right-6 bottom-6 bg-white border border-slate-200 rounded-xl shadow-sm flex flex-col overflow-hidden z-20">
+                        <div className="absolute right-6 bottom-6 bg-white border border-slate-200 rounded-md  flex flex-col overflow-hidden z-20">
                             <button className="p-3 hover:bg-slate-50 border-b border-slate-100"><ZoomIn size={18} className="text-slate-600" /></button>
                             <button className="p-3 hover:bg-slate-50 border-b border-slate-100"><ZoomOut size={18} className="text-slate-600" /></button>
                             <button className="p-3 hover:bg-slate-50"><Settings size={18} className="text-slate-600" /></button>
@@ -290,30 +290,30 @@ export default function EditorPage() {
                         <div className="flex flex-col min-w-[400px]">
                             <span className="text-[13px] font-bold text-slate-700 mb-2">업로드한 사진</span>
                             <div className="flex gap-2">
-                                {[1,2,3,4].map(i => (
-                                    <div key={i} className="w-24 h-24 bg-slate-100 rounded-lg border border-slate-200 flex-shrink-0"></div>
+                                {[1, 2, 3, 4].map(i => (
+                                    <div key={i} className="w-24 h-24 bg-slate-100 rounded-md border border-slate-200 flex-shrink-0"></div>
                                 ))}
-                                <button className="w-24 h-24 bg-slate-50 border border-dashed border-slate-300 rounded-lg flex flex-col items-center justify-center text-slate-400 hover:bg-slate-100 transition-colors">
+                                <button className="w-24 h-24 bg-slate-50 border border-dashed border-slate-300 rounded-md flex flex-col items-center justify-center text-slate-400 hover:bg-slate-100 transition-colors">
                                     <Upload size={20} className="mb-1" />
                                     <span className="text-[11px] font-semibold">사진 추가</span>
                                 </button>
                             </div>
                         </div>
                         {/* AI Banner Mock */}
-                        <div className="min-w-[300px] bg-blue-50/50 rounded-xl border border-blue-100 p-4 flex items-center justify-between">
+                        <div className="min-w-[300px] bg-blue-50/50 rounded-md border border-blue-100 p-4 flex items-center justify-between">
                             <div>
                                 <div className="text-blue-600 font-bold text-sm mb-1 flex items-center gap-1">
                                     <Grid3x3 size={14} /> AI 인테리어 제안
                                 </div>
-                                <p className="text-[12px] text-slate-500">우리집에 어울리는 인테리어 스타일을<br/>AI가 추천해드려요.</p>
+                                <p className="text-[12px] text-slate-500">우리집에 어울리는 인테리어 스타일을<br />AI가 추천해드려요.</p>
                             </div>
-                            <button className="bg-white border border-blue-200 text-blue-600 px-4 py-2 rounded-lg text-sm font-bold hover:bg-blue-50">제안 받기</button>
+                            <button className="bg-white border border-blue-200 text-blue-600 px-4 py-2 rounded-md text-sm font-bold hover:bg-blue-50">제안 받기</button>
                         </div>
                     </div>
                 </main>
 
                 {/* Right Sidebar (Catalog OR Properties) */}
-                <aside className="w-[320px] bg-white border-l border-slate-200 flex flex-col z-10 shrink-0 shadow-[-4px_0_15px_rgba(0,0,0,0.03)]">
+                <aside className="w-[320px] bg-white border-l border-slate-200 flex flex-col z-10 shrink-0 shadow-[-4px_0_14px_rgba(0,0,0,0.03)]">
                     {selectedId ? (
                         // [패널 모드 A] 속성 편집 (가구가 선택되었을 때)
                         <div className="p-6 flex flex-col h-full animate-in fade-in slide-in-from-right-4 duration-200">
@@ -326,7 +326,7 @@ export default function EditorPage() {
                                 <div key={item.id} className="space-y-5">
                                     <div>
                                         <label className="text-[13px] font-bold text-slate-600 mb-1.5 block">가구 이름</label>
-                                        <input type="text" readOnly value={item.name} className="w-full bg-slate-50 border border-slate-200 rounded-lg px-3 py-2.5 text-sm text-slate-600 outline-none" />
+                                        <input type="text" readOnly value={item.name} className="w-full bg-slate-50 border border-slate-200 rounded-md px-3 py-2.5 text-sm text-slate-600 outline-none" />
                                     </div>
                                     <div className="grid grid-cols-2 gap-3">
                                         <div>
@@ -334,7 +334,7 @@ export default function EditorPage() {
                                             <input
                                                 type="number" value={Math.round(item.width * 10)}
                                                 onChange={(e) => handleSizeChange(item.id, 'width', e.target.value)}
-                                                className="w-full bg-white border border-slate-300 focus:border-blue-500 focus:ring-1 focus:ring-blue-500 rounded-lg px-3 py-2.5 text-sm text-slate-900 outline-none transition-colors"
+                                                className="w-full bg-white border border-slate-300 focus:border-blue-500 focus:ring-1 focus:ring-blue-500 rounded-md px-3 py-2.5 text-sm text-slate-900 outline-none transition-colors"
                                             />
                                         </div>
                                         <div>
@@ -342,15 +342,15 @@ export default function EditorPage() {
                                             <input
                                                 type="number" value={Math.round(item.height * 10)}
                                                 onChange={(e) => handleSizeChange(item.id, 'height', e.target.value)}
-                                                className="w-full bg-white border border-slate-300 focus:border-blue-500 focus:ring-1 focus:ring-blue-500 rounded-lg px-3 py-2.5 text-sm text-slate-900 outline-none transition-colors"
+                                                className="w-full bg-white border border-slate-300 focus:border-blue-500 focus:ring-1 focus:ring-blue-500 rounded-md px-3 py-2.5 text-sm text-slate-900 outline-none transition-colors"
                                             />
                                         </div>
                                     </div>
                                     <div className="pt-4 border-t border-slate-100 grid grid-cols-2 gap-3">
-                                        <button onClick={handleRotate} className="flex items-center justify-center gap-2 bg-slate-100 hover:bg-slate-200 text-slate-700 py-2.5 rounded-lg text-sm font-bold transition-colors">
+                                        <button onClick={handleRotate} className="flex items-center justify-center gap-2 bg-slate-100 hover:bg-slate-200 text-slate-700 py-2.5 rounded-md text-sm font-bold transition-colors">
                                             <RotateCw size={16} /> 회전하기
                                         </button>
-                                        <button onClick={handleDelete} className="flex items-center justify-center gap-2 bg-red-50 hover:bg-red-100 text-red-600 py-2.5 rounded-lg text-sm font-bold transition-colors">
+                                        <button onClick={handleDelete} className="flex items-center justify-center gap-2 bg-red-50 hover:bg-red-100 text-red-600 py-2.5 rounded-md text-sm font-bold transition-colors">
                                             <Trash2 size={16} /> 삭제하기
                                         </button>
                                     </div>
@@ -365,9 +365,9 @@ export default function EditorPage() {
                                 <div className="flex gap-2 mb-4">
                                     <div className="flex-1 relative">
                                         <Search size={16} className="absolute left-3 top-1/2 -translate-y-1/2 text-slate-400" />
-                                        <input type="text" placeholder="가구 검색" className="w-full bg-slate-50 border border-slate-200 rounded-lg pl-9 pr-3 py-2 text-sm outline-none focus:border-blue-400" />
+                                        <input type="text" placeholder="가구 검색" className="w-full bg-slate-50 border border-slate-200 rounded-md pl-9 pr-3 py-2 text-sm outline-none focus:border-blue-400" />
                                     </div>
-                                    <button className="w-10 h-10 border border-slate-200 rounded-lg flex items-center justify-center text-slate-500 hover:bg-slate-50 shrink-0"><Filter size={16} /></button>
+                                    <button className="w-10 h-10 border border-slate-200 rounded-md flex items-center justify-center text-slate-500 hover:bg-slate-50 shrink-0"><Filter size={16} /></button>
                                 </div>
                                 {/* 탭 메뉴 */}
                                 <div className="flex gap-4 text-[13px] font-bold text-slate-400 border-b border-slate-100 overflow-x-auto pb-[-1px]">
@@ -382,7 +382,7 @@ export default function EditorPage() {
                             <div className="flex-1 overflow-y-auto p-4 grid grid-cols-2 gap-3 content-start bg-white">
                                 {CATALOG.map((item, idx) => (
                                     <div key={idx} className="group cursor-pointer" onClick={() => handleAddItem(item)}>
-                                        <div className="relative aspect-[4/3] bg-slate-50 border border-slate-100 rounded-xl mb-2 overflow-hidden group-hover:border-blue-400 transition-colors">
+                                        <div className="relative aspect-[4/3] bg-slate-50 border border-slate-100 rounded-md mb-2 overflow-hidden group-hover:border-blue-400 transition-colors">
                                             <img src={item.imgUrl} alt={item.name} className="w-full h-full object-cover mix-blend-multiply" />
                                             <button className="absolute top-2 right-2 text-slate-300 hover:text-red-400"><Heart size={16} /></button>
                                         </div>
@@ -393,7 +393,7 @@ export default function EditorPage() {
                             </div>
 
                             <div className="p-4 border-t border-slate-100 shrink-0 bg-white">
-                                <button className="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold text-sm py-3 rounded-xl flex items-center justify-center gap-2 transition-colors">
+                                <button className="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold text-sm py-3 rounded-md flex items-center justify-center gap-2 transition-colors">
                                     <Upload size={16} /> 내 가구 업로드
                                 </button>
                             </div>
@@ -409,9 +409,8 @@ export default function EditorPage() {
 // --- 헬퍼 컴포넌트 ---
 function LnbItem({ icon, label, active = false }: { icon: React.ReactNode, label: string, active?: boolean }) {
     return (
-        <div className={`flex items-center gap-3 px-3 py-2.5 rounded-lg text-[13px] cursor-pointer transition-colors ${
-            active ? 'bg-blue-50 text-blue-600 font-bold' : 'text-slate-600 font-semibold hover:bg-slate-50'
-        }`}>
+        <div className={`flex items-center gap-3 px-3 py-2.5 rounded-md text-[13px] cursor-pointer transition-colors ${active ? 'bg-blue-50 text-blue-600 font-bold' : 'text-slate-600 font-semibold hover:bg-slate-50'
+            }`}>
             <span className={active ? "text-blue-600" : "text-slate-400"}>{icon}</span>
             {label}
         </div>
@@ -420,9 +419,8 @@ function LnbItem({ icon, label, active = false }: { icon: React.ReactNode, label
 
 function ToolBtn({ icon, label, active = false }: { icon: React.ReactNode, label: string, active?: boolean }) {
     return (
-        <button className={`w-14 flex flex-col items-center justify-center gap-1.5 py-3 hover:bg-slate-50 transition-colors ${
-            active ? 'text-blue-600' : 'text-slate-500'
-        }`}>
+        <button className={`w-14 flex flex-col items-center justify-center gap-1.5 py-3 hover:bg-slate-50 transition-colors ${active ? 'text-blue-600' : 'text-slate-500'
+            }`}>
             {icon}
             <span className={`text-[10px] ${active ? 'font-bold' : 'font-medium'}`}>{label}</span>
         </button>

@@ -2,7 +2,8 @@
 
 > **"내 공간을 나만의 스타일로"**  
 > 도면이나 치수를 입력하면 공간에 맞는 가구를 추천하고, 마우스 드래그 앤 드롭으로 실시간 가구 배치 및 스타일링을 지원하는 SaaS형 2D 인테리어 솔루션입니다.
-https://roomit-ten.vercel.app/
+> 
+> https://roomit-ten.vercel.app/
 ---
 
 ## 🚀 주요 기능 (Features)
@@ -48,7 +49,7 @@ npm install
 ```
 
 2. 로컬 개발 서버 실행
-```angular2html
+```
 npm run dev
 ```
 서버가 실행되면 브라우저에서 아래 주소로 접속할 수 있습니다.
